@@ -13,7 +13,6 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function getSumOfDigits(n) {
-  
   let num = String(n).split('').map((e)=>{return Number(e)}).reduce((previousValue, currentValue) => previousValue + currentValue,0);
   if(num > 9)
   {
@@ -23,7 +22,6 @@ function getSumOfDigits(n) {
     return num;
   }
 }
-console.log(getSumOfDigits(99));
 module.exports = {
   getSumOfDigits
 };
